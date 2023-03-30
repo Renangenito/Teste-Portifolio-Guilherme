@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #0B2447;
+    --cor-sencundaria: #A5D7E8;
+    --cor-terciaria: #576CBC; 
+    --cor-hover: #19376D; 
+
+    --font-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-sencundaria);
+}
+
+.cabeçalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabeçalho_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabeçalho_menu_link {
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+
+.Apresentacao {
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentaçao_conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.apresentacao_conteudo_título {
+    font-size: 1.875rem;;
+    font-family: var(--font-primaria);
+}
+
+.apresentacao_conteudo_titulo {
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+}
+
+.Titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.Apresentaçao_Botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.Apresentaao_links_subtitulos{
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.875rem;
+}
+
+.apresentaçao_links_links {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 20px 0px;
+    color: var(--cor-sencundaria);
+    text-decoration: none;
+    font-family: var(--font-primaria) ;
+}
+
+.apresentaçao_links_links:hover {
+    background-color: var(--cor-hover);
+}
+
+.Imagem_perfil {
+    width: 50%;
+}
+
+.Rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+    .cabeçalho {
+        padding: 10%;
+    }
+
+    .cabeçalho_menu {
+        justify-content: center;
+    }
+
+    .Apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentaçao_conteudo {
+        width: auto;
+    }
+
+}
